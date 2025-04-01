@@ -48,3 +48,4 @@ C:\Users\gabrielhnunez\Documents\ProyectosLocales\EA\PracticaProfesionalizante\a
 C:\Users\gabrielhnunez\Documents\ProyectosLocales\EA\PracticaProfesionalizante\appCpsInventario\Backend\obj\Debug\net9.0\Backend.pdb
 C:\Users\gabrielhnunez\Documents\ProyectosLocales\EA\PracticaProfesionalizante\appCpsInventario\Backend\obj\Debug\net9.0\Backend.genruntimeconfig.cache
 C:\Users\gabrielhnunez\Documents\ProyectosLocales\EA\PracticaProfesionalizante\appCpsInventario\Backend\obj\Debug\net9.0\ref\Backend.dll
+C:\Users\gabrielhnunez\Documents\ProyectosLocales\EA\PracticaProfesionalizante\appCpsInventario\Backend\obj\Debug\net9.0\Backend.sourcelink.json

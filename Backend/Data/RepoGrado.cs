@@ -29,6 +29,30 @@ namespace Backend.Data
             return grados;
         }
 
+        public bool Modificar(int idGrado, string abreviatura, string gradoCompleto)
+        {
+            using (var connection = AbrirConexion())
+            {
+                using (var command = new MySqlCommand("UPDATE grado SET abreviatura = @abreviatura, grado_completo = @grado_completo WHERE id_grado = @idGrado", connection))
+                {
+                    command.Parameters.AddWithValue("@idGrado", idGrado);
+                    command.Parameters.AddWithValue("@abreviatura", abreviatura);
+                    command.Parameters.AddWithValue("@gradoCompleto", gradoCompleto);
+
+                    try
+                    {
+                        int rowsAffected = command.ExecuteNonQuery();
+                        return rowsAffected > 0;
+                    }
+                    catch (MySqlException ex)
+                    {
+                        Console.WriteLine($"Error al eliminar grado: {ex.Message}");
+                        return false;
+                    }
+                }
+            }
+        }
+
         public bool Eliminar(int idGrado)
         {
             using (var connection = AbrirConexion())
