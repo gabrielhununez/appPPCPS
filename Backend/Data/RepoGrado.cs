@@ -46,7 +46,7 @@ namespace Backend.Data
                     }
                     catch (MySqlException ex)
                     {
-                        Console.WriteLine($"Error al eliminar grado: {ex.Message}");
+                        Console.WriteLine($"Error al modificar grado: {ex.Message}");
                         return false;
                     }
                 }

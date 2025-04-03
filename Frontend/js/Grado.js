@@ -33,7 +33,7 @@ function cargarGrados() {
                     <td>${grado._Abreviatura}</td>
                     <td>${grado._GradoCompleto}</td>
                     <td>
-                        <button class="btn btn-info btn-sm" >Detalle</button>
+                        <button class="btn btn-info btn-sm" href=>Detalle</button>
                         <button class="btn btn-warning btn-sm" >Editar</button>
                         <button class="btn btn-danger btn-sm" onclick="Eliminar(${grado._IdGrado})">Eliminar</button>
                     </td>

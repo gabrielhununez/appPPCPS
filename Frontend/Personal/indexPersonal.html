@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Personal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styleGrado.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Gestión de Personal</h2>
+        <form id="grado-form" class="mb-3">
+            <input type="text" id="personal" class="form-control mb-2" placeholder="Ingrese el personal">
+            <button type="submit" class="btn btn-success">Agregar</button>
+        </form>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Grado</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>TipoDoc</th>
+                    <th>NroDoc</th>
+                </tr>
+            </thead>
+            <tbody id="personal-table">
+                <!-- Se cargan los datos de forma dinamica -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/Personal.js"></script>
+</body>
+</html>
