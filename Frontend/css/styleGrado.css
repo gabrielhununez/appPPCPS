@@ -9,3 +9,27 @@ body {
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
+
+.cambio-btn .icono {
+    display: none;
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+}
+
+.cambio-btn .texto {
+    display: inline;
+}
+
+@media (max-width: 768px)
+{
+    .cambio-btn .texto
+    {
+        display: none;
+    }
+
+    .cambio-btn .icono
+    {
+        display: inline;
+    }
+}

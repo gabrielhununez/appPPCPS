@@ -29,13 +29,21 @@ function cargarGrados() {
 
             data.forEach(grado => {
                 let row = `<tr>
-                    <td>${grado._idGrado}</td>
                     <td>${grado._abreviatura}</td>
                     <td>${grado._gradoCompleto}</td>
                     <td>
-                        <button class="btn btn-info btn-sm" href=>Detalle</button>
-                        <button class="btn btn-warning btn-sm" >Editar</button>
-                        <button class="btn btn-danger btn-sm" onclick="Eliminar(${grado._idGrado})">Eliminar</button>
+                        <button class="btn btn-info btn-sm cambio-btn">
+                            <span class="texto">Detalle</span>
+                            <img class="icono" src="../../img/detalle.svg" alt="detalle"/>
+                        </button>
+                        <button class="btn btn-warning btn-sm cambio-btn">
+                            <span class="texto">Editar</span>
+                            <img class="icono" src="../../img/editar.svg" alt="editar"/>
+                        </button>
+                        <button class="btn btn-danger btn-sm cambio-btn" onclick="Eliminar(${grado._idGrado})">
+                            <span class="texto">Eliminar</span>
+                            <img class="icono" src="../../img/eliminar.svg" alt="Eliminar"/>
+                        </button>
                     </td>
                 </tr>`;
                 tableBody.innerHTML += row;

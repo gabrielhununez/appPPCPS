@@ -29,17 +29,17 @@ function CargarPersonal() {
 
             data.forEach(personal => {
                 let row = `<tr>
-                    <td>${personal._IdPersonal}</td>
-                    <td>${personal._IdGrado}</td>
-                    <td>${personal._Nombre} ${personal._SegundoNombre}</td>
-                    <td>${personal._Apellido}</td>
-                    <td>${personal._TipoDoc}</td>
-                    <td>${personal._NroDoc}</td>
+                    <td>${personal._idPersonal}</td>
+                    <td>${personal._idGrado}</td>
+                    <td>${personal._nombre} ${personal._segundoNombre}</td>
+                    <td>${personal._apellido}</td>
+                    <td>${personal._tipoDoc}</td>
+                    <td>${personal._nroDoc}</td>
 
                     <td>
                         <button class="btn btn-info btn-sm" href=>Detalle</button>
                         <button class="btn btn-warning btn-sm" >Editar</button>
-                        <button class="btn btn-danger btn-sm" onclick="Eliminar(${personal._IdPersonal})">Eliminar</button>
+                        <button class="btn btn-danger btn-sm" onclick="Eliminar(${personal._idPersonal})">Eliminar</button>
                     </td>
                 </tr>`;
                 tableBody.innerHTML += row;
