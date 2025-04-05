@@ -10,7 +10,7 @@ Este proyecto utiliza **.NET 6/7 Web API** para el backend y archivos HTML, CSS 
 ### 1. Requisitos previos
 - Tener instalado el SDK de .NET: [Descargar SDK .NET](https://dotnet.microsoft.com/download)
 
-### 2. Pasos para iniciar el proyecto
+### 2. Pasos para crear el proyecto
 
 1. Crear una carpeta para alojar el proyecto.
 2. Abrir una terminal PowerShell y ejecutar el siguiente comando para crear el backend:
@@ -38,7 +38,7 @@ Este proyecto utiliza **.NET 6/7 Web API** para el backend y archivos HTML, CSS 
 6. Dentro de `Frontend`, crear las siguientes carpetas:
    - `css` → Para hojas de estilo
    - `js` → Para archivos JavaScript
-   - Carpetas específicas por áreas del sistema:
+   - Crear las carpetas específicas por áreas del sistema:
      - `Grado`
      - `Personal`
      - `Inventario`
@@ -85,8 +85,10 @@ appPPCPS/
 ├── Frontend/
 │   ├── css/
 │   ├── js/
-│   ├── Grado/
-│   ├── Personal/
+│   ├── Areas/
+│       ├── Grado/
+│       ├── Personal/
+│       └── ...
 │   ├── Inventario/
 │   └── index.html
 ```
