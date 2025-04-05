@@ -29,13 +29,13 @@ function cargarGrados() {
 
             data.forEach(grado => {
                 let row = `<tr>
-                    <td>${grado._IdGrado}</td>
-                    <td>${grado._Abreviatura}</td>
-                    <td>${grado._GradoCompleto}</td>
+                    <td>${grado._idGrado}</td>
+                    <td>${grado._abreviatura}</td>
+                    <td>${grado._gradoCompleto}</td>
                     <td>
                         <button class="btn btn-info btn-sm" href=>Detalle</button>
                         <button class="btn btn-warning btn-sm" >Editar</button>
-                        <button class="btn btn-danger btn-sm" onclick="Eliminar(${grado._IdGrado})">Eliminar</button>
+                        <button class="btn btn-danger btn-sm" onclick="Eliminar(${grado._idGrado})">Eliminar</button>
                     </td>
                 </tr>`;
                 tableBody.innerHTML += row;
@@ -43,8 +43,8 @@ function cargarGrados() {
         });
 }
 
-function Eliminar(_IdGrado) {
-    fetch(`${apiUrl}/${_IdGrado}`, {
+function Eliminar(_idGrado) {
+    fetch(`${apiUrl}/${_idGrado}`, {
         method: "DELETE"
     })
     .then(() => cargarGrados());
