@@ -1,7 +1,7 @@
 
 # 📦 Proyecto appPPCPS
 
-Este proyecto utiliza **.NET 6/7 Web API** para el backend y archivos HTML, CSS y JS para el frontend.
+Este proyecto utiliza **.NET 9.0 Web API** para el backend y archivos HTML, CSS y JS para el frontend.
 
 ---
 
