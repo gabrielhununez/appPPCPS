@@ -1,18 +1,92 @@
-# appPPCPS
 
-<h3>Creacion del proyecto</h3>
-<lo>Instalar el SDK --> https://dotnet.microsoft.com/download</lo>
-<lo>Crear una carpeta para alojar el proyecto</lo>
-<lo>En la terminal de PowerShell ejecutar --> dotnet new webapi -o Backend</lo>
-<lo>Dentro de la carpeta Backend ejecutar --> dotnet add package MySql.Data</lo>
-<lo>Dentro de la carpeta Backend deben encontrarse las carpetas Controller, Data y Models, en caso de faltar alguna, crearla.</lo>
-<lo>En el en la carpeta de proyecto agregar una carpeta que se llame Frontend donde se alojaran las vistas del proyecto.</lo>
-<lo>Dentro de Frontend deberan crear las carpetas css, js, y las carpetas de areas (Grado, Personal, Inventario, etc)</lo>
-    
-<h3>Ejecutar el proyecto</h3>
-<lo>Abrir la terminal PowerShell (ejecuta la API)</lo>
-<lo>cd ./Backend</lo>
-<lo>dotnet run</lo>
-<lo>Ejecutar el index.html con live server (ejecuta el Frontend)</lo>
-    
+# 📦 Proyecto appPPCPS
 
+Este proyecto utiliza **.NET 6/7 Web API** para el backend y archivos HTML, CSS y JS para el frontend.
+
+---
+
+## 🚀 Creación del Proyecto
+
+### 1. Requisitos previos
+- Tener instalado el SDK de .NET: [Descargar SDK .NET](https://dotnet.microsoft.com/download)
+
+### 2. Pasos para iniciar el proyecto
+
+1. Crear una carpeta para alojar el proyecto.
+2. Abrir una terminal PowerShell y ejecutar el siguiente comando para crear el backend:
+
+   ```bash
+   dotnet new webapi -o Backend
+   ```
+
+3. Entrar en la carpeta `Backend` y agregar el paquete de conexión a MySQL:
+
+   ```bash
+   cd Backend
+   dotnet add package MySql.Data
+   ```
+
+4. Verificar que dentro de la carpeta `Backend` existan las siguientes subcarpetas:
+   - `Controllers`
+   - `Data`
+   - `Models`
+
+   > Si alguna carpeta no está presente, créala manualmente.
+
+5. En la raíz del proyecto, crear una carpeta llamada `Frontend` para alojar las vistas del sistema.
+
+6. Dentro de `Frontend`, crear las siguientes carpetas:
+   - `css` → Para hojas de estilo
+   - `js` → Para archivos JavaScript
+   - Carpetas específicas por áreas del sistema:
+     - `Grado`
+     - `Personal`
+     - `Inventario`
+     - etc.
+
+---
+
+## ▶️ Ejecución del Proyecto
+
+### Backend
+
+1. Abrir una terminal PowerShell.
+2. Navegar a la carpeta del backend:
+
+   ```bash
+   cd ./Backend
+   ```
+
+3. Ejecutar la API:
+
+   ```bash
+   dotnet run
+   ```
+
+### Frontend
+
+1. Abrir el archivo `index.html` dentro de la carpeta `Frontend`.
+2. Ejecutarlo utilizando **Live Server** (por ejemplo, con la extensión de VS Code).
+
+---
+
+## 📁 Estructura del Proyecto
+
+```
+appPPCPS/
+│
+├── Backend/
+│   ├── Controllers/
+│   ├── Data/
+│   ├── Models/
+│   ├── Program.cs
+│   └── ...
+│
+├── Frontend/
+│   ├── css/
+│   ├── js/
+│   ├── Grado/
+│   ├── Personal/
+│   ├── Inventario/
+│   └── index.html
+```
