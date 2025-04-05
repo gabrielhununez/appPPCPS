@@ -18,15 +18,39 @@ namespace Backend.Data
                         {
                             grados.Add(new Grado
                             {
-                                _IdGrado = reader.GetInt32("id_grado"),
-                                _Abreviatura = reader.GetString("abreviatura"),
-                                _GradoCompleto = reader.GetString("grado_completo")
+                                _idGrado = reader.GetInt32("id_grado"),
+                                _abreviatura = reader.GetString("abreviatura"),
+                                _gradoCompleto = reader.GetString("grado_completo")
                             });
                         }
                     }
                 }
             }
             return grados;
+        }
+
+        public bool Insertar(int idGrado, string abreviatura, string gradoCompleto)
+        {
+            using (var connection = AbrirConexion())
+            {
+                using (var command = new MySqlCommand("INSERT INTO grado (abreviatura, grado_completo) VALUES (@abreviatura, '@gradoCompleto') WHERE id_grado = @idGrado", connection))
+                {
+                    command.Parameters.AddWithValue("@idGrado", idGrado);
+                    command.Parameters.AddWithValue("@abreviatura", abreviatura);
+                    command.Parameters.AddWithValue("@gradoCompleto", gradoCompleto);
+
+                    try
+                    {
+                        int rowsAffected = command.ExecuteNonQuery();
+                        return rowsAffected > 0;
+                    }
+                    catch (MySqlException ex)
+                    {
+                        Console.WriteLine($"Error al modificar grado: {ex.Message}");
+                        return false;
+                    }
+                }
+            }
         }
 
         public bool Modificar(int idGrado, string abreviatura, string gradoCompleto)

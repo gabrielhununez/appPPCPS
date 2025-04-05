@@ -18,13 +18,13 @@ namespace Backend.Data
                         {
                             personal.Add(new Personal
                             {
-                                _IdPersonal = reader.GetInt32("id_personal"),
-                                _IdGrado = reader.GetInt32("id_grado"),
-                                _Nombre = reader.GetString("nombre"),
-                                _SegundoNombre = reader.GetString("segundo_nombre"),
-                                _Apellido = reader.GetString("apellido"),
-                                _TipoDoc = reader.GetString("tipo_doc"),
-                                _NroDoc = reader.GetInt32("nro_doc")
+                                _idPersonal = reader.GetInt32("id_personal"),
+                                _idGrado = reader.GetInt32("id_grado"),
+                                _nombre = reader.GetString("nombre"),
+                                _segundoNombre = reader.GetString("segundo_nombre"),
+                                _apellido = reader.GetString("apellido"),
+                                _tipoDoc = reader.GetString("tipo_doc"),
+                                _nroDoc = reader.GetInt32("nro_doc")
                             });
                         }
                     }

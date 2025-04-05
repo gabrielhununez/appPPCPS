@@ -1,10 +1,12 @@
+using Backend.Models;
+
 namespace Backend.Models
 {
     public class Grado
     {
-        public int _IdGrado { get; set; }
-        public string? _Abreviatura { get; set; }
-        public string? _GradoCompleto { get; set; }
+        public int _idGrado  { get; set; }
+        public string _abreviatura { get; set; }
+        public string? _gradoCompleto { get; set; }
 
         public Grado()
         {
