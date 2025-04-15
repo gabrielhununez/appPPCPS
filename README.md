@@ -30,6 +30,7 @@ Este proyecto utiliza **.NET 9.0 Web API** para el backend y archivos HTML, CSS 
    - `Controllers`
    - `Data`
    - `Models`
+   - `Database`
 
    > Si alguna carpeta no está presente, créala manualmente.
 
@@ -88,7 +89,7 @@ appPPCPS/
 │   ├── Areas/
 │       ├── Grado/
 │       ├── Personal/
+│       ├── Inventario/
 │       └── ...
-│   ├── Inventario/
 │   └── index.html
 ```
